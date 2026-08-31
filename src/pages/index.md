@@ -15,4 +15,5 @@ I like to spend most of my time doing tech stuff.  Things like working on
 compilers, doing graphics programming, electronics and other fun nerdy things.
 
 Have a look through the [blog](/blog/) if any of that sounds interesting to you!
+The contents of this website are also available in RSS form [here](/rss.xml).
 
