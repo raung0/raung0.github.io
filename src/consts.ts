@@ -15,9 +15,9 @@ export interface DateFormat {
 }
 
 // Site-wide configuration.
-export const SITE_TITLE = "Astro ʕ•ᴥ•ʔ Bear Blog";
-export const SITE_DESCRIPTION = "A small, plain blog built with Astro.";
-export const SITE_URL = "https://astro-bearblog.harleyjwilson.workers.dev/";
+export const SITE_TITLE = "Radu's little blog";
+export const SITE_DESCRIPTION = "My little place on the internet :^)";
+export const SITE_URL = "https://raung0.github.io/";
 export const SITE_LANG = "en";
 
 export const DATE_FORMAT: DateFormat = {
@@ -37,9 +37,9 @@ export const NAV_ITEMS: LinkItem[] = [
   { label: "Blog", href: "/blog/" },
 ];
 export const FOOTER_ITEMS: FooterItem[] = [
-  { label: "Made with" },
-  {
-    label: "Astro ʕ•ᴥ•ʔ Bear",
-    href: "https://github.com/harleyjwilson/astro-bearblog",
-  },
+  // { label: "Made with" },
+  // {
+  //   label: "Astro ʕ•ᴥ•ʔ Bear",
+  //   href: "https://github.com/harleyjwilson/astro-bearblog",
+  // },
 ];
