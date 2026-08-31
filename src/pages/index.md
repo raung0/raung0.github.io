@@ -1,19 +1,18 @@
 ---
 layout: ../layouts/Base.astro
-title: Astro ʕ•ᴥ•ʔ Bear Blog
-description: A small, plain blog built with Astro.
+title: Home
 ---
 
-# A simple blog, built with Astro
+# Heyo! 👋🏻
 
-Astro Bear Blog is a small, plain blog theme inspired by [Bear Blog](https://bearblog.dev). It avoids ads, trackers, and unnecessary scripts so readers can focus on your writing.
+I'm Radu, a student from Romania and the creator of this blog.
 
----
+This is where I will keep my ideas that deserve more than a passing thought in
+my Obsidian vault.  I write about programming, some projects I am working on,
+and various other hobbies that I have.
 
-Use it as a starting point for a personal site or blog. Write in Markdown, publish static pages, and host the site yourself.
+I like to spend most of my time doing tech stuff.  Things like working on
+compilers, doing graphics programming, electronics and other fun nerdy things.
 
-Made by [Harley Wilson](https://harleyjwilson.com/).
+Have a look through the [blog](/blog/) if any of that sounds interesting to you!
 
----
-
-Pages are about 5 KB and include basic search-engine-friendly markup.

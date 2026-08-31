@@ -33,7 +33,6 @@ export const CUSTOM_STYLESHEET: string | undefined = undefined;
 // Add navigation and footer links here without editing components.
 export const NAV_ITEMS: LinkItem[] = [
   { label: "Home", href: "/" },
-  { label: "About", href: "/about/" },
   { label: "Blog", href: "/blog/" },
 ];
 export const FOOTER_ITEMS: FooterItem[] = [
