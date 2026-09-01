@@ -111,10 +111,6 @@ Itatur? Quiatae cullecum rem ent aut odis in re eossequodi nonsequ idebis ne sap
 ![Alt text](./full/or/relative/path/of/image)
 ```
 
-### Output
-
-![blog placeholder](../../assets/opengraph.jpg)
-
 ---
 
 ## Blockquotes

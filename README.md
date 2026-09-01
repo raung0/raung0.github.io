@@ -28,8 +28,6 @@ Edit `src/consts.ts` before publishing:
 - `CUSTOM_STYLESHEET`
 - `NAV_ITEMS` and `FOOTER_ITEMS`
 
-The Open Graph image lives at `src/assets/opengraph.jpg`.
-
 ## Content
 
 Site content is stored in Astro pages and content collections:
