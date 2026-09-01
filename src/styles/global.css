@@ -2,8 +2,8 @@
 :root {
   color-scheme: light dark;
   --width: 800px;
-  --font-main: Verdana, sans-serif;
-  --font-secondary: Verdana, sans-serif;
+  --font-main: "Cantarell", sans-serif;
+  --font-secondary: "Cantarell", sans-serif;
   --font-scale: 1em;
   --background-color: #fff;
   --heading-color: #111;
