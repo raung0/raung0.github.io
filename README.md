@@ -86,4 +86,7 @@ This project is inspired by [Bear Blog](https://bearblog.dev), created by [Herma
 
 ## License
 
-[MIT](LICENSE) © 2026 Harley Wilson
+Code: [MIT](LICENSE)
+
+Unless otherwise stated, blog content, images, and written material are
+Copyright © 2026 Radu and may not be reused without permission.

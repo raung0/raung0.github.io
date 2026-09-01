@@ -34,6 +34,7 @@ export const CUSTOM_STYLESHEET: string | undefined = undefined;
 export const NAV_ITEMS: LinkItem[] = [
   { label: "Home", href: "/" },
   { label: "Blog", href: "/blog/" },
+  { label: "GitHub", href: "https://github.com/raung0" },
 ];
 export const FOOTER_ITEMS: FooterItem[] = [
   // { label: "Made with" },
