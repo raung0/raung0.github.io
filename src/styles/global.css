@@ -90,6 +90,36 @@ footer { padding: 25px 0; text-align: center; }
 .title:hover { text-decoration: none; }
 .title h1 { font-size: 1.5em; }
 
+.human-dash {
+  position: relative;
+  cursor: help;
+}
+.human-dash::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  z-index: 1;
+  bottom: calc(100% + 0.5rem);
+  left: 50%;
+  width: max-content;
+  max-width: 16rem;
+  padding: 0.35rem 0.55rem;
+  border: 1px solid var(--border-color);
+  border-radius: 4px;
+  background: var(--code-background-color);
+  color: var(--code-color);
+  font-size: 0.8rem;
+  line-height: 1.2;
+  pointer-events: none;
+  opacity: 0;
+  transform: translate(-50%, 0.25rem);
+  transition: opacity 120ms ease, transform 120ms ease;
+}
+.human-dash:hover::after,
+.human-dash:focus-visible::after {
+  opacity: 1;
+  transform: translate(-50%, 0);
+}
+
 ul.blog-posts { list-style-type: none; padding: unset; }
 ul.blog-posts li { display: flex; }
 ul.blog-posts li span { flex: 0 0 130px; }

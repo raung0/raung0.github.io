@@ -25,5 +25,40 @@ const { title, description, type, publishedTime, modifiedTime } = Astro.props;
     <Header><Nav /></Header>
     <main><slot /></main>
     <Footer />
+    <script>
+      const ignoredElements = new Set(["CODE", "PRE", "SCRIPT", "STYLE"]);
+      const textNodes = [];
+      const walker = document.createTreeWalker(document.body, NodeFilter.SHOW_TEXT);
+      let node;
+
+      while ((node = walker.nextNode())) {
+        const parent = node.parentElement;
+        if (parent && !ignoredElements.has(parent.tagName) && !parent.closest("code, pre, script, style")) {
+          textNodes.push(node);
+        }
+      }
+
+      for (const textNode of textNodes) {
+        if (!textNode.nodeValue?.includes("–")) continue;
+
+        const fragment = document.createDocumentFragment();
+        const parts = textNode.nodeValue.split("–");
+
+        parts.forEach((part, index) => {
+          if (part) fragment.append(document.createTextNode(part));
+          if (index < parts.length - 1) {
+            const dash = document.createElement("span");
+            dash.className = "human-dash";
+            dash.tabIndex = 0;
+            dash.dataset.tooltip = "A human placed this!";
+            dash.setAttribute("aria-label", "A human placed this!");
+            dash.textContent = "–";
+            fragment.append(dash);
+          }
+        });
+
+        textNode.parentNode?.replaceChild(fragment, textNode);
+      }
+    </script>
   </body>
 </html>
