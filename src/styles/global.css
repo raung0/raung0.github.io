@@ -58,6 +58,7 @@ a {
 }
 
 a:hover { text-decoration: underline; }
+span[title] { text-decoration: underline dotted; text-underline-offset: 0.15em; }
 nav a { margin-right: 8px; }
 strong, b { color: var(--heading-color); }
 button { margin: 0; cursor: pointer; }

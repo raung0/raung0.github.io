@@ -2,10 +2,10 @@
 title: 'Optimizing pipelines through specialization'
 description: 'Optimizing pipelines through specialization'
 pubDate: 2026-09-03
-draft: true
 tags:
 - 'nerd'
 - 'programming'
+- 'kama_studio'
 ---
 
 When designing how my video editor [Kama
