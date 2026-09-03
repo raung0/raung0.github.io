@@ -5,7 +5,7 @@ pubDate: 2026-09-03
 tags:
 - 'nerd'
 - 'programming'
-- 'kama_studio'
+- 'kamastudio'
 ---
 
 When designing how my video editor [Kama
@@ -17,13 +17,12 @@ needed to utilize the GPU *somehow* to handle complex effect pipelines.
 While thinking about it whilst I was doing some random bs throughout the house,
 I came up with an idea: "What if I could stitch some shaders together and have
 all effects run that way?".  Welp, so I did.  I decided to make pretty much all
-video effects shaders, and through the power of
-[naga](https://lib.rs/crates/naga) I was able to achieve that goal.  Each plugin
-and effect is namespaced, so there are no conflicts, and they all get stitched
-together into a single combined shader at the end.  This is what allows my video
-editor to reach the performance it does, and as such allows the shader compiler
-to not only better optimize the code, but also reduce memory bandwidth and
-needed passes.
+video effect shaders, through the power of [naga](https://lib.rs/crates/naga),
+able to achieve that goal.  Each plugin and effect is namespaced, so there are
+no conflicts, and they all get stitched together into a single combined shader
+at the end.  This is what allows my video editor to reach the performance it
+does, and as such allows the shader compiler to not only better optimize the
+code, but also reduce memory bandwidth and needed passes.
 
 So I was thinking, what if you could apply this to other programs?  Turns out,
 you can!
